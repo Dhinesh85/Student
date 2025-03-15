@@ -34,7 +34,7 @@ class StudentController extends Controller
 
         Student::create($data);
 
-        return redirect()->route('students')->with('success', 'Student added successfully!');
+        return redirect()->route('students.index')->with('success', 'Student added successfully!');
     }
 
     public function edit(Student $student)
@@ -59,12 +59,12 @@ class StudentController extends Controller
 
         $student->update($data);
 
-        return redirect()->route('students')->with('success', 'Student updated successfully!');
+        return redirect()->route('students.index')->with('success', 'Student updated successfully!');
     }
 
     public function destroy(Student $student)
     {
         $student->delete();
-        return redirect()->route('students')->with('success', 'Student deleted successfully!');
+        return redirect()->route('students.index')->with('success', 'Student deleted successfully!');
     }
 }

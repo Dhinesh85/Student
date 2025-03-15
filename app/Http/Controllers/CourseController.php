@@ -25,7 +25,7 @@ class CourseController extends Controller
             'description' => $request->description,
         ]);
 
-        return redirect()->route('course')->with('success', 'Course added successfully.');
+        return redirect()->route('courses.index')->with('success', 'Course added successfully.');
     }
 
     public function show(Course $course)
@@ -55,13 +55,13 @@ class CourseController extends Controller
             'description' => $request->description,
         ]);
     
-        return redirect()->route('course')->with('success', 'Course updated successfully.');
+        return redirect()->route('courses.index')->with('success', 'Course updated successfully.');
     }
     
 
     public function destroy(Course $course)
     {
         $course->delete();
-        return redirect()->route('course')->with('success', 'Course deleted successfully.');
+        return redirect()->route('courses.index')->with('success', 'Course deleted successfully.');
     }
 }

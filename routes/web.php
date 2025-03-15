@@ -22,10 +22,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/courses',[CourseController::class,'Index'])->name('course');
-Route::get('/student',[StudentController::class,'Index'])->name('students');
-Route::get('/trainingschedule',[TrainingScheduleController::class,'Index'])->name('trainingschedule');
-Route::get('/opt-in-opt-out',[OptinoptoutController::class,'Index'])->name('optinoptout');
+
 
 
 

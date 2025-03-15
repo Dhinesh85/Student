@@ -81,19 +81,19 @@
                         <div class="mb-4">
                             <label class="block text-sm font-medium text-gray-700">Name</label>
                             <input type="text" name="name" id="student_name" class="w-full border p-2 rounded-lg">
-                            @error('name') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
+                         
                         </div>
 
                         <div class="mb-4">
                             <label class="block text-sm font-medium text-gray-700">Email</label>
                             <input type="email" name="email" id="student_email" class="w-full border p-2 rounded-lg">
-                            @error('email') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
+                          
                         </div>
 
                         <div class="mb-4">
                             <label class="block text-sm font-medium text-gray-700">Phone</label>
                             <input type="text" name="phone" id="student_phone" class="w-full border p-2 rounded-lg">
-                            @error('phone') <span class="text-red-500 text-sm">{{ $message }}</span> @enderror
+                         
                         </div>
 
                         <div class="flex justify-end space-x-2">

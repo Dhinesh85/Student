@@ -22,25 +22,25 @@
     <nav class="flex-grow">
         <ul class="space-y-2">
             <li>
-                <a href="{{route('course')}}" class="flex items-center p-3 rounded-lg hover:bg-gray-700 transition">
+                <a href="{{route('courses.index')}}" class="flex items-center p-3 rounded-lg hover:bg-gray-700 transition">
                     <i class="fas fa-book"></i>
                     <span class="sidebar-text ml-3 transition-all">Courses</span>
                 </a>
             </li>
             <li>
-                <a href="{{route('students')}}" class="flex items-center p-3 rounded-lg hover:bg-gray-700 transition">
+                <a href="{{route('students.index')}}" class="flex items-center p-3 rounded-lg hover:bg-gray-700 transition">
                     <i class="fas fa-user-graduate"></i>
                     <span class="sidebar-text ml-3 transition-all">Students</span>
                 </a>
             </li>
             <li>
-                <a href="{{route('trainingschedule')}}" class="flex items-center p-3 rounded-lg hover:bg-gray-700 transition">
+                <a href="{{route('training_schedules.index')}}" class="flex items-center p-3 rounded-lg hover:bg-gray-700 transition">
                     <i class="fas fa-calendar-alt"></i>
                     <span class="sidebar-text ml-3 transition-all">Training Schedules</span>
                 </a>
             </li>
             <li>
-                <a href="{{route('optinoptout')}}" class="flex items-center p-3 rounded-lg hover:bg-gray-700 transition">
+                <a href="{{route('student_time.index')}}" class="flex items-center p-3 rounded-lg hover:bg-gray-700 transition">
                     <i class="fas fa-toggle-on"></i>
                     <span class="sidebar-text ml-3 transition-all">Opt-in/Opt-out</span>
                 </a>
